@@ -9,6 +9,7 @@
 /**
  * 
  */
+class UBehaviorTree;
 class USphereComponent;
 UCLASS()
 class GAMEBALL_API AAIBallBaseCharacter : public ABallBaseCharacter
@@ -16,9 +17,12 @@ class GAMEBALL_API AAIBallBaseCharacter : public ABallBaseCharacter
 	GENERATED_BODY()
  public:
         AAIBallBaseCharacter(const FObjectInitializer& ObjInit);
+  UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "AI")
+  UBehaviorTree* BehaviorTreeAsset;
 		protected:
         UPROPERTY(VisibleAnywhere, Category = "ChangeCollor")
         USphereComponent* CollisionComponent;
+
 
         virtual void BeginPlay() override;
         virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
