@@ -13,5 +13,6 @@ UCLASS()
 class GAMEBALL_API UBallAIPerceptionComponent : public UAIPerceptionComponent
 {
 	GENERATED_BODY()
-	
+	public:
+		AActor* GetClosestEnemy() const;
 };

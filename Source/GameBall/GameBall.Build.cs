@@ -12,7 +12,7 @@ public class GameBall : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
-		PublicIncludePaths.AddRange(new string[] { "GameBall/Public/Player", "GameBall/Public/AI/Tasks" });
+		PublicIncludePaths.AddRange(new string[] { "GameBall/Public/Player", "GameBall/Public/AI/Tasks", "GameBall/Public/AI/Services" });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
